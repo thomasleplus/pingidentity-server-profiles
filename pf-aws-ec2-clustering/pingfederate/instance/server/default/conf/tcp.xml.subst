@@ -97,11 +97,11 @@
     <com.pingidentity.aws.AWS_PING
             port_number="${_DOLLAR_}{pf.cluster.bind.port}"
             port_range="0"
-            regions=""
-            tags=""
-            filters=""
-            access_key=""
-            secret_key=""
+            regions="${PF_AWS_PING_REGIONS}"
+            tags="${PF_AWS_PING_TAGS}"
+            filters="${PF_AWS_PING_FILTERS}"
+            access_key="${PF_AWS_PING_ACCESS_KEY}"
+            secret_key="${PF_AWS_PING_SECRET_KEY}"
             log_aws_error_messages="true"/>
 
     <MERGE3 min_interval="30000" max_interval="60000" />
