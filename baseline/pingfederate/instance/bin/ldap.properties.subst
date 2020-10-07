@@ -1,4 +1,4 @@
-ldap.url=ldap://pingdirectory:389
+ldap.url=ldap://${PD_ENGINE_PRIVATE_HOSTNAME}:${LDAP_PORT}
 ldap.username=cn=pingfederate
 ldap.password=OBF:JWE:eyJhbGciOiJkaXIiLCJlbmMiOiJBMTI4Q0JDLUhTMjU2Iiwia2lkIjoiRW1JY1UxOVdueSIsInZlcnNpb24iOiI5LjIuMS4xIn0..euBO0bawJz3XC_plAjxECg.yF7BpnCTPZlpZUo21WQ5IQ.YlLtlJTxXhrp3LsxyQDo5g
 ldap.connectTimeout=10000
@@ -18,3 +18,4 @@ role.map.admin=cn=PFAdminGroup,ou=groups,${USER_BASE_DN}
 role.map.cryptoManager=cn=PFCryptoGroup,ou=groups,${USER_BASE_DN}
 role.map.auditor=cn=PFAuditorGroup,ou=groups,${USER_BASE_DN}
 role.map.userAdmin=cn=PFUserAdminGroup,ou=groups,${USER_BASE_DN}
+role.map.expressionAdmin=cn=PFExpressionAdminGroup,ou=groups,${USER_BASE_DN}
